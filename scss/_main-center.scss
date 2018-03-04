@@ -22,3 +22,9 @@ $color_main : #ec8109;
         line-height: 1.5;
     }
 }
+
+@media (min-width: 1200px) {
+    .main-center {
+      margin-top: 70px;
+    }
+  }

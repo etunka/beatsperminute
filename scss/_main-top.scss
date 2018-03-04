@@ -23,3 +23,10 @@
     font-size: 27px;
     margin-top: 10px;
 }
+
+
+@media (min-width: 1200px) {
+    .main-top {
+      margin-top: 60px;
+    }
+  }
