@@ -405,7 +405,7 @@ body {
 .header-title {
   width: 90%;
   text-align: center;
-  margin: 55px auto;
+  margin: 19px auto 26px auto;
   font-family: Quicksand, Arial, Helvetica, sans-serif;
   font-size: 25px;
   font-weight: 500;
@@ -426,6 +426,9 @@ body {
   margin-top: 0;
   text-align: center; }
 
+.main-top_tempo {
+  margin-top: 25px; }
+
 .main-top_tempo span {
   font-size: 27px;
   margin-top: 10px; }
@@ -437,7 +440,7 @@ body {
   padding: 75px 34px;
   text-align: center;
   margin: 55px auto;
-  margin-top: 73px;
+  margin-top: 40px;
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
