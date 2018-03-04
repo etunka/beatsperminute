@@ -13,8 +13,46 @@ function setBpmView(bpm) {
     var $bpmName = document.getElementById('bpm-name');
     $bpmResult.innerText = bpm;
 
+    var currentTempoName = '-';
     //TODO : write if else cases for $bpmName and change it accordingly
-    $bpmName.innerText = 'Largo';
+    if(bpm <= 20){
+        currentTempoName = "Larghissimo"
+    } else if(bpm > 20 && bpm <= 40) {
+        currentTempoName = "Grave"
+    }
+    else if(bpm > 40 && bpm <= 50) {
+        currentTempoName = "Lento"
+    }
+    else if(bpm > 50 && bpm <= 60) {
+        currentTempoName = "Largo"
+    }
+    else if(bpm > 60 && bpm <= 70) {
+        currentTempoName = "Adagio"
+    }
+    else if(bpm > 70 && bpm <= 80) {
+        currentTempoName = "Andante"
+    }
+    else if(bpm > 80 && bpm <= 90) {
+        currentTempoName = "Moderato"
+    }
+    else if(bpm > 90 && bpm <= 100) {
+        currentTempoName = "Allegretto"
+    }
+    else if(bpm > 100 && bpm <= 120) {
+        currentTempoName = "Allegro"
+    }
+    else if(bpm > 120 && bpm <= 132) {
+        currentTempoName = "Vivace"
+    }
+    else if(bpm > 132 && bpm <= 170) {
+        currentTempoName = "Presto"
+    }
+    else if(bpm > 170 && bpm <= 200) {
+        currentTempoName = "Prestissimo"
+    }
+    
+    $bpmName.innerText = currentTempoName;
+
 }
 
 
