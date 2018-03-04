@@ -1,51 +1,50 @@
 <html lang="en">
-    
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Main</title>
-        <link rel="stylesheet" type="text/css" href="css/main.css">
-        <script src="js/main.js"></script>
-        <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600,600i,700,700i" rel="stylesheet">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23043857-14"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
 
-            gtag('config', 'UA-23043857-14');
-        </script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Main</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="js/main.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600,600i,700,700i" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23043857-14"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-    </head>
+        function gtag() {
+            dataLayer.push(arguments);
+        }
 
-    <body>
-        <div class="header">
-            <h1 class="header-title">beatsperminute.net</h1>
-        </div>
+        gtag('js', new Date());
 
-        <div class="main-top">
-            <div class="main-top_counter">
-                <div class="bpm-no" id="bpm-result">88</div>
-                <div class="bpm-unit">BPM</div>
-            </div>
-            <div class="main-top_tempo">
-                <span id="bpm-name">Allegro</span>
-            </div>
-        </div><!--main-top-->
+        gtag('config', 'UA-23043857-14');
+    </script>
 
-        <div class="main-center" onclick="setBpmTiming()">
-            <span class="main-center_button" href="#">Tap, click or press Spacebar </span>
-        </div>
+</head>
 
-        <div class="footer"></div>
+<body>
+<div class="header">
+    <h1 class="header-title">beatsperminute.net</h1>
+</div>
 
+<div class="main-top">
+    <div class="main-top_counter">
+        <div class="bpm-no" id="bpm-result">0</div>
+        <div class="bpm-unit">BPM</div>
+    </div>
+    <div class="main-top_tempo">
+        <span id="bpm-name">Allegro</span>
+    </div>
+</div><!--main-top-->
 
+<div class="main-center" onclick="setBpmTiming()">
+    <span class="main-center_button" href="#">Tap, click or press Spacebar </span>
+</div>
 
+<div class="footer"></div>
 
-
-
-
-    </body>
+</body>
+</html>
